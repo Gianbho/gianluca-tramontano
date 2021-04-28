@@ -258,7 +258,7 @@ a:visited {
 
 }
 
-@media only screen and (min-width: 605px) and (max-width: 1199px) {
+@media only screen and (min-width: 651px) and (max-width: 1199px) {
   .first-menu {
     display: flex;
 
@@ -295,7 +295,7 @@ a:visited {
 
 }
 
-@media only screen and (max-width: 604px) {
+@media only screen and (max-width: 650px) {
   .dropdown:hover .first-menu {
     display: flex;
     justify-content: space-around;
