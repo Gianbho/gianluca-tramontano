@@ -1,0 +1,203 @@
+/* MAIN HOME CONTENT */
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.wide-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+
+
+  background-color: #8bf2de;
+  height: auto;
+  border: 2px solid purple;
+}
+
+.feature-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+
+  height: auto;
+  background-color: #d36e2d;
+}
+
+
+h2 {
+  text-align: left;
+  margin: 15px 0;
+  padding-left: 13px;
+  padding-bottom: 25px;
+}
+
+.content-images {
+  display: flex;
+  justify-content: center;
+  height:150px;
+  width:100%;
+}
+
+.first-image {
+  height: 150px;
+}
+
+.second-image {
+  height: 150px;
+}
+
+.content-texts {
+  margin: 25px 0;
+  height: auto;
+  text-align: center;
+}
+
+.contact-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  left: 9px;
+  }
+
+
+.contact-list img {
+  width: 25px;
+  margin-top: 15px;
+  margin-right: 25px
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+  .wide-1 {
+    flex-direction: column;
+    position: relative;
+    height: 550px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .wide-1 h2 {
+    width: 75%;
+    margin: 0;
+    height: 10%;
+    margin-top: 15px;
+
+    align-self: flex-start;
+  }
+
+  .first-content {
+    border: 2px solid blue;
+    position: relative;
+
+    width: 75%;
+    align-self: flex-end;
+  }
+
+
+  .first-content p {
+    padding: 15px;
+    text-align: left;
+    margin-right:55px;
+  }
+
+  .content-images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    height: 100%;
+    order: -1;
+  }
+
+  .first-image {
+    width: 100%;
+    height: 450px;
+  }
+
+  .feature-box {
+    flex-direction: column;
+    width: 50%;
+
+  }
+
+  .feature-2  {
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .feature-2 h2 {
+    align-self: center;
+    width: 75%;
+    height: 10%;
+    border: 2px solid blue;
+  }
+
+  .second-content {
+    position: absolute;
+    top: 15px;
+    width: 75%;
+    align-self: flex-end;
+
+  }
+
+  .second-content p {
+    padding: 15px;
+    text-align: left;
+    margin-right:55px;
+  }
+
+  .second-image {
+    width: 100%;
+    height: 350px;
+  }
+
+}
+
+@media only screen and (min-width: 605px) and (max-width: 1199px) {
+
+  h2 {
+    padding-bottom: 0;
+  }
+
+  .wide-box {
+    height: auto;
+  }
+
+  .feature-box {
+    width: 50%;
+    border: 2px solid purple;
+    margin-bottom: 0;
+    height: auto;
+  }
+
+  .content-texts {
+    margin-top: 5px;
+  }
+
+  .feature-box > h2 {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .first-image {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 604px) {
+
+}
+
+/* IPHONE 5/SE */
+
+@media only screen and (max-width: 340px) {
+
+}
