@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "AlexBrush";
-  src: url("../fonts/alexbrush-regular-webfont.woff") format("woff");
+  font-family: "euphoriascript";
+  src: url("../fonts/euphoriascript-regular-webfont.woff") format("woff");
 }
 
 * {
@@ -16,7 +16,13 @@
 }
 
 body {
+  background-color: #d4d7dd;
+}
 
+body h2 {
+  font-family: "Lucida handwriting", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
 }
 
 a:link,
@@ -31,7 +37,8 @@ a:visited {
   display: flex;
   flex-wrap: wrap;
 
-  background-image: linear-gradient(to right, #1cc5dc, #6d36a8, #890596);
+  background-image: linear-gradient(to right, #28b5b5, #8fd9a8);
+  box-shadow: 1px 2px 5px #8fd9a8;
   justify-content: space-between;
 
   width: 100%;
@@ -51,14 +58,13 @@ a:visited {
 
 .menu-item-1 h1 {
   padding: 7px;
-  font-family: "AlexBrush";
+  font-family: "euphoriascript";
   font-size: 40px;
   color: #e6dd3b;
 }
 
 .menu-item-2 {
   align-self: center;
-
 }
 
 
@@ -93,7 +99,7 @@ a:visited {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: darkgreen;
+  background-color: #393e46;
   z-index: 1;
   height: 65px;
 
@@ -137,7 +143,6 @@ a:visited {
   justify-content: center;
 }
 
-
 .second-menu li {
 
   display: inline;
@@ -149,7 +154,10 @@ a:visited {
   margin: 10px 15px;
 
   align-self: center;
+}
 
+.second-menu li:last-of-type {
+  margin-right: 0;
 }
 
 /* FOOTER */
@@ -161,7 +169,7 @@ a:visited {
   height: auto;
   width:100%;
   justify-content: space-between;
-  background-color: #343233;
+  background-color: #4b778d;
 }
 
 .footer-item {
@@ -223,6 +231,30 @@ a:visited {
   margin-bottom: 0;
 }
 
+/* BUTTONS */
+
+.button-main-styles {
+  padding: 8px 0;
+  margin: 25px 0;
+
+  background-color: #16c79a;
+  border: 2px solid #64dfdf;
+  border-radius: 3px;
+}
+
+.button-main-styles:hover {
+  background-color: #80ffdb;
+  border-color: #64dfdf;
+}
+
+.button-main-styles:active {
+  background-color: #80ffdb;
+  border-color: #64dfdf;
+}
+
+.button-main-styles > a {
+  padding: 9px 15px;
+}
 
 
 @media only screen and (min-width: 1200px) {
@@ -254,6 +286,11 @@ a:visited {
   .right-footer-items {
     width: 40%;
     margin: 0;
+  }
+
+  .button-main-styles:active {
+    background-color: #16c79a;
+    border-color: #64dfdf;
   }
 
 }

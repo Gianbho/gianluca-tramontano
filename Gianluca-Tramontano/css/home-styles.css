@@ -1,5 +1,6 @@
 /* MAIN HOME CONTENT */
 
+
 .features-container {
   display: flex;
   flex-wrap: wrap;
@@ -13,10 +14,10 @@
   width: 100%;
 
 
-  background-color: #8bf2de;
+  background-color: #28b5b5;
   height: auto;
-  border: 2px solid purple;
 }
+
 
 .feature-box {
   display: flex;
@@ -25,15 +26,31 @@
   justify-content: center;
 
   height: auto;
-  background-color: #d36e2d;
+  background-color: #8fd9a8;
 }
 
+.feature-box p {
+  text-align: center;
+}
 
 h2 {
-  text-align: left;
+  text-align: center;
   margin: 15px 0;
-  padding-left: 13px;
-  padding-bottom: 25px;
+}
+
+p {
+  font-family: "Heebo", sans-serif;
+  line-height: 25px;
+  padding: 0 12px;
+}
+
+.second-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .content-images {
@@ -44,11 +61,16 @@ h2 {
 }
 
 .first-image {
-  height: 150px;
+  height: 165px;
+  padding-bottom: 15px;
 }
 
 .second-image {
   height: 150px;
+}
+
+.third-image {
+  height: 135px;
 }
 
 .content-texts {
@@ -56,21 +78,38 @@ h2 {
   height: auto;
   text-align: center;
 }
+.contact-home {
+  display: flex;
+  justify-content: center;
+}
 
 .contact-list {
   list-style-type: none;
   display: flex;
+  width:75%;
   flex-direction: row;
   justify-content: center;
   position: relative;
-  left: 9px;
+  left: 10px;
   }
-
 
 .contact-list img {
   width: 25px;
   margin-top: 15px;
   margin-right: 25px
+}
+
+.home-button-2 {
+  background-color: #29bb89;
+  border-color: #289672;
+}
+
+.home-button-2:hover {
+  border-color: #289672;
+}
+
+.home-button-2:active {
+  border-color: #289672;
 }
 
 
@@ -79,8 +118,8 @@ h2 {
   .wide-1 {
     flex-direction: column;
     position: relative;
-    height: 550px;
-    justify-content: flex-start;
+    height: 450px;
+    justify-content:center;
     align-items: center;
   }
 
@@ -89,27 +128,26 @@ h2 {
     margin: 0;
     height: 10%;
     margin-top: 15px;
+    text-align: left;
 
     align-self: flex-start;
   }
 
   .first-content {
-    border: 2px solid blue;
     position: relative;
-
+    top: 15px;
     width: 75%;
     align-self: flex-end;
   }
 
-
   .first-content p {
     padding: 15px;
+    padding-left: 0;
     text-align: left;
     margin-right:55px;
   }
 
   .content-images {
-    display: flex;
     flex-wrap: wrap;
     width: 25%;
     height: 100%;
@@ -118,54 +156,71 @@ h2 {
 
   .first-image {
     width: 100%;
-    height: 450px;
+    height:auto;
+    align-self: center;
+    padding: 0 25px;
   }
 
   .feature-box {
     flex-direction: column;
     width: 50%;
-
-  }
-
-  .feature-2  {
     position: relative;
     justify-content: flex-start;
     align-items: center;
-  }
-
-  .feature-2 h2 {
-    align-self: center;
-    width: 75%;
-    height: 10%;
-    border: 2px solid blue;
+    height:350px;
   }
 
   .second-content {
-    position: absolute;
-    top: 15px;
+    display: flex;
     width: 75%;
-    align-self: flex-end;
-
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
-  .second-content p {
+  .feature-box h2 {
+    align-self: center;
+    width: 75%;
+    height: 10%;
+  }
+
+
+  .feature-box p {
     padding: 15px;
+    padding-left: 0;
     text-align: left;
-    margin-right:55px;
+    margin-right:15px;
   }
 
   .second-image {
     width: 100%;
-    height: 350px;
+    height: auto;
+    align-self: center;
+    margin: 0 15px;
+  }
+
+  .third-image {
+    width: 70%;
+    height: auto;
+    align-self: center;
+    margin: 0 15px;
+  }
+
+  .button-main-styles:active {
+    background-color: #16c79a;
+    border-color: #64dfdf;
+  }
+
+  .home-button-2:active {
+    background-color: #29bb89;
+    border-color: #289672;
   }
 
 }
 
 @media only screen and (min-width: 605px) and (max-width: 1199px) {
 
-  h2 {
-    padding-bottom: 0;
-  }
+
 
   .wide-box {
     height: auto;
@@ -173,7 +228,6 @@ h2 {
 
   .feature-box {
     width: 50%;
-    border: 2px solid purple;
     margin-bottom: 0;
     height: auto;
   }
