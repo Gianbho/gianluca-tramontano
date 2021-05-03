@@ -155,7 +155,7 @@ p {
   }
 
   .first-image {
-    width: 100%;
+    width: 90%;
     height:auto;
     align-self: center;
     padding: 0 25px;
@@ -211,15 +211,24 @@ p {
     border-color: #64dfdf;
   }
 
+  .home-button-2 {
+    position: relative;
+    top: 20px;
+  }
+
   .home-button-2:active {
     background-color: #29bb89;
     border-color: #289672;
   }
 
+  .contact-home {
+    position: relative;
+    top: 35px;
+  }
+
 }
 
 @media only screen and (min-width: 605px) and (max-width: 1199px) {
-
 
 
   .wide-box {
@@ -244,6 +253,23 @@ p {
   .first-image {
     margin: 0;
   }
+
+  .third-image {
+    width: 115px;
+    height:115px;
+    padding-bottom: 0;
+  }
+
+  .second-content-pos {
+    position: relative;
+    top: -25px;
+  }
+
+  .contact-home {
+    position: relative;
+    top: 12px;
+  }
+
 }
 
 @media only screen and (max-width: 604px) {
