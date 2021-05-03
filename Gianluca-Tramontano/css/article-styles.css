@@ -37,9 +37,7 @@
 }
 
 .article-page-container p {
-  font-family: "Heebo", sans-serif;
   font-size: 18px;
-  line-height: 25px;
 }
 
 .article-page-container p:last-of-type {
